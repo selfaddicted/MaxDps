@@ -25,22 +25,6 @@ MaxDps.Frames = {}
 MaxDps.visibleNameplates = {}
 
 MaxDps.FrameData = {}
-
-local auraMetaTable = {
-	__index = function()
-		return {
-			up          = false,
-			upMath		= 0,
-			count       = 0,
-			remains     = 0,
-			duration    = 0,
-			refreshable = true,
-		}
-	end
-}
-
-MaxDps.FrameData.buff = setmetatable({}, auraMetaTable)
-MaxDps.FrameData.debuff = setmetatable({}, auraMetaTable)
 MaxDps.FrameData.cooldown = setmetatable({}, {
 	__index = function(table, key)
 		return MaxDps:CooldownConsolidated(key, MaxDps.FrameData.timeShift)

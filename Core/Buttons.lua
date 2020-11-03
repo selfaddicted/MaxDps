@@ -351,9 +351,9 @@ function MaxDps:FetchAllButtons()
 
 	self.isFetchingButtons = nil
 	
-	if self.isRotating then
+	if not self.isRotating then
 		self:EnableRotationTimer()
-		self:InvokeNextSpell()
+		-- self:InvokeNextSpell()
 	end
 
 end

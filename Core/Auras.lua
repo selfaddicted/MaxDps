@@ -6,14 +6,18 @@ local GetTime = GetTime
 local UnitAura = UnitAura
 
 MaxDps.auraMeta = {
-	name           = nil,
-	up             = false,
-	upMath		   = 0,
-	count          = 0,
-	expirationTime = 0,
-	remains        = 0,
-	refreshable    = true -- well if it doesn't exist, then it is refreshable
-}
+	__index = function()
+		return {
+			up          = false,
+			count       = 0,
+			remains     = 0,
+			duration    = 0,
+			refreshable = true,
+		}
+	end}
+
+MaxDps.FrameData.buff = setmetatable({}, MaxDps.auraMeta)
+MaxDps.FrameData.debuff = setmetatable({}, MaxDps.auraMeta)
 
 --------------------------------------------------------------------------------
 -- general functions

@@ -59,3 +59,8 @@ Class/Druid/Guardian.lua
 Class/Monk/Main.lua
 Class/Monk/BrewMaster.lua
 Class/Monk/WindWalker.lua
+
+Class/Hunter/Main.lua
+Class/Hunter/BeastMastery.lua
+Class/Hunter/Marksmanship.lua
+Class/Hunter/Survival.lua
