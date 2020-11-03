@@ -1,30 +1,61 @@
-## Title: MaxDps
+## Title: MaxDps (selfaddicted's fork)
 ## Notes: Rotation helper framework.
 ## Version: 9.0.0
-## Author: Kaminaris
+## Author: selfaddicted
 ## Interface: 90001
 ## SavedVariables: MaxDpsOptions
 ## OptionalDependencies: Bartender4, ElvUI, ButtonForge, SVUI_ActionBars, G15Buttons, SyncUI, LUI, Dominos, DiabolicUI, Neuron
-## X-Curse-Project-ID: 91970
-## X-WoWI-ID: 24637
 
-Libs\LibStub\LibStub.lua
-Libs\CallbackHandler-1.0\CallbackHandler-1.0.xml
-Libs\AceAddon-3.0\AceAddon-3.0.xml
-Libs\AceTimer-3.0\AceTimer-3.0.xml
-Libs\AceEvent-3.0\AceEvent-3.0.xml
-Libs\AceDB-3.0\AceDB-3.0.xml
-Libs\LibSharedMedia-3.0\lib.xml
-Libs\AceConsole-3.0\AceConsole-3.0.xml
-Libs\LibCustomGlow-1.0\LibCustomGlow-1.0.lua
+Libs\LibStub.lua
+Libs\CallbackHandler-1.0.lua
+Libs\AceAddon-3.0.lua
+Libs\AceTimer-3.0.lua
+Libs\AceEvent-3.0.lua
+Libs\AceDB-3.0.lua
+Libs\LibSharedMedia-3.0.lua
+Libs\AceConsole-3.0.lua
+Libs\LibCustomGlow-1.0.lua
 Libs\ForAllIndentsAndPurposes.lua
 Libs\StdUi\StdUi.xml
 
-Core.lua
-Options.lua
-Buttons.lua
-Helper.lua
-TimeToDie.lua
+Init.lua
+
+Core/Helper.lua
+Core/Options.lua
+Core/Auras.lua
+Core/Azerite.lua
+Core/Buttons.lua
+Core/Spells.lua
+Core/Talents.lua
+Core/Rotation.lua
+Core/TimeToDie.lua
+
 Modules/Custom.lua
 Modules/Window.lua
 Modules/Profiler.lua
+
+Class/Priest/Main.lua
+Class/Priest/Shadow.lua
+Class/Priest/Discipline.lua
+
+Class/Warrior/Main.lua
+Class/Warrior/Fury.lua
+Class/Warrior/Arms.lua
+Class/Warrior/Protection.lua
+
+Class/DeathKnight/Main.lua
+Class/DeathKnight/Frost.lua
+Class/DeathKnight/Unholy.lua
+Class/DeathKnight/Blood.lua
+
+Class/Paladin/Main.lua
+Class/Paladin/Retribution.lua
+Class/Paladin/Protection.lua
+
+Class/Druid/Main.lua
+Class/Druid/Balance.lua
+Class/Druid/Guardian.lua
+
+Class/Monk/Main.lua
+Class/Monk/BrewMaster.lua
+Class/Monk/WindWalker.lua
